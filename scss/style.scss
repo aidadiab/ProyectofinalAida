@@ -1,0 +1,12 @@
+@import "./complements/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import "./complements/mixins";
+@import "./pages/index";
+@import "./pages/nosotros";
+@import "./pages/galeria";
+@import "./pages/novedades";
+@import "./pages/contacto";
+@import "./pages/separte";
+@import "./complements/bucles";

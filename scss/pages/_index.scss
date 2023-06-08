@@ -1,0 +1,261 @@
+* {
+  font-family: "Prata", serif;
+}
+.section-novedades-img {
+  @include box-shadow(3);
+}
+
+/*INICIO HEADER*/
+
+.logo-header {
+  width: 140px;
+  padding: 5px;
+}
+.nav-link {
+  color: $white;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.navbar {
+  background-color: rgba($color: #1e1d1d, $alpha: 0.3);
+  &-nav {
+    font-size: 16px;
+    margin-top: 1px;
+    background-color: $dark;
+  }
+}
+
+.hr-class {
+  max-width: 100px;
+  text-align: center;
+  margin: auto;
+  background-color: $dark;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*FIN HEADER*/
+
+/*INICIO MAIN INDEX*/
+.main-principal {
+  @include flex-column-center;
+  background-repeat: no-repeat;
+  background-image: url(../imagenesLaArabita/ImagenesBackground/imagen_home.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 55vh;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+  &-title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 0px 25px;
+    margin-top: 80px;
+    &-button {
+      text-align: center;
+    }
+  }
+}
+/*FIN MAIN INDEX*/
+
+/*INICIO SECTION CATALOGO*/
+
+.section-catalogo-main {
+  @include grid-columns;
+  background-image: url(../imagenesLaArabita/ImagenesBackground/imagen-catalogo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  margin-top: 20px;
+  font-weight: 400;
+  text-align: center;
+  &-h2 {
+    font-size: 30px;
+  }
+  &-parrafo {
+    font-size: 20px;
+  }
+}
+/*FIN SECTION CATALOGO*/
+
+/*INICIO SECTION CAROUSEL*/
+.section-carousel {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 30px 0px;
+}
+.carousel-inner {
+  height: 400px;
+}
+.carousel-inner img {
+  height: 400px;
+}
+/*INICIO SECTION CAROUSEL*/
+
+/*INICIO FOOTER*/
+.pie-pagina {
+  background-color: #e6e6e6;
+}
+.logo_footer {
+  margin: 40px 20px;
+}
+
+.hr-class-footer {
+  width: 60px;
+  background-color: $dark;
+  height: 2px;
+}
+
+.footer-locales {
+  display: grid;
+  padding: 5px 20px;
+  text-align: start;
+}
+.section-footer {
+  background: #1d1d1b;
+  text-align: center;
+  color: $white;
+  line-height: 35px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 20px;
+}
+.section-footer-redes {
+  padding: 15px 0px;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: $dark;
+  padding: 15px 10px;
+  text-align: center;
+  color: $white;
+}
+
+/*FIN FOOTER*/
+
+@media (min-width: $lg-viewport) {
+  .navbar {
+    background-color: rgba($color: #1e1d1d, $alpha: 0.3);
+    &-nav {
+      font-size: 16px;
+      margin-top: -20px;
+      background-color: transparent;
+    }
+  }
+  .logo-header {
+    margin-left: 20px;
+    width: 120px;
+    height: 90px;
+  }
+
+  /*INICIO MAIN INDEX*/
+  .main-principal {
+    background-image: url(../imagenesLaArabita/ImagenesBackground/imagen_home.jpg);
+    display: flex;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    &-title {
+      margin-left: 900px;
+      margin-right: 40px;
+      padding: 30px 60px;
+      text-align: start;
+      font-style: normal;
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 40px;
+      &-button {
+        margin-left: 960px;
+        font-weight: 400;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  /*FIN MAIN INDEX*/
+
+  /*INICIO SECTION CATALOGO*/
+
+  .section-catalogo {
+    @include grid-columns;
+    background-image: url(../imagenesLaArabita/ImagenesBackground/imagen-catalogo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    margin-top: 20px;
+    font-weight: 400;
+    text-align: center;
+    &-h2 {
+      font-size: 50px;
+      margin-top: 60px;
+    }
+    &-parrafo {
+      font-size: 25px;
+    }
+  }
+  .button {
+    margin-top: -40px;
+  }
+  /*INICIO SECTION CAROUSEL*/
+  .section-carousel {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 40px 0px;
+  }
+  .carousel-inner {
+    height: 500px;
+  }
+  .carousel-inner img {
+    height: 500px;
+  }
+  /*INICIO SECTION CAROUSEL*/
+  /* INICIO FOOTER*/
+
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .logo_footer {
+    width: 140px;
+    height: 140px;
+  }
+  .footer-locales {
+    display: grid;
+  
+    justify-items: center;
+  }
+  .section-footer {
+    background: $dark;
+    text-align: center;
+    color: $white;
+    line-height: 35px;
+    letter-spacing: 1px;
+    width: 300px;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .section-footer-redes {
+    padding: 20px 0px;
+  }
+  /*FIN FOOTER*/
+}

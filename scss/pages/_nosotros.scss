@@ -1,0 +1,92 @@
+/*INICIO MAIN NOSOTROS*/
+.main-principal-nosotros {
+  @include flex-column-center;
+  background-repeat: no-repeat;
+  background-image: url(../imagenesLaArabita/ImagenesBackground/Batata-y-Rubiolo_00062.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 60vh;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+  &-title {
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  &-texto {
+    font-size: 18px;
+    font-weight: normal !important;
+    max-width: 700px;
+    margin: 10px 60px;
+    letter-spacing: 2px;
+  }
+}
+/*FIN MAIN NOSOTROS*/
+
+/*INICIO SECTION NOSOTROS*/
+
+.section-nosotros {
+  font-size: 25px;
+  font-weight: normal !important;
+  margin: auto;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  &-parrafo {
+    max-width: 880px;
+    margin: 20px 20px;
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $lg-viewport) {
+  /*INICIO MAIN NOSOTROS*/
+  .main-principal-nosotros {
+    @include flex-column-center;
+    background-repeat: no-repeat;
+    background-image: url(../imagenesLaArabita/ImagenesBackground/Batata-y-Rubiolo_00062.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 70vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    padding: 70px 0;
+    &-title {
+      font-size: 70px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    &-texto {
+      font-size: 22px;
+      font-weight: normal !important;
+      max-width: 700px;
+      margin: 20px 400px;
+      letter-spacing: 2px;
+      padding-top: 10px;
+    }
+  }
+  /*FIN MAIN NOSOTROS*/
+
+  /*INICIO SECTION NOSOTROS*/
+
+  .section-nosotros {
+    font-size: 40px;
+    font-weight: normal !important;
+    margin: auto;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    &-parrafo {
+      max-width: 880px;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.75;
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@for $i from 1 through 10 {
+  .margin-#{$i} {
+    margin-top: 1rem * $i;
+  }
+}
+
+@each $color, $color-claro in $categories {
+  .main-principal--#{$color}{
+    background-color: map-get($color-claro, $color);
+    .main-principal{
+      background-color: map-get($color-claro, color);
+      @if map-get($color-claro, color) == true {
+        color: $dark;
+      } @else{
+        color: $white;
+      }
+        
+      }
+    }
+  }
